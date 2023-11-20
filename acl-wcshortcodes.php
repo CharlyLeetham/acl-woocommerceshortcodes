@@ -73,4 +73,4 @@ Version 1.0 - Original Version
 	}
 	*/
 
-	remove_shortcode('add_to_cart');
+	remove_shortcode('product_add_to_cart');
