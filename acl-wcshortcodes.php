@@ -12,8 +12,8 @@ Changelog
 Version 1.0 - Original Version
 */
 
-/*
-	function product_add_to_cart( $atts ) {
+
+	function acl_add_to_cart( $atts ) {
 		global $post;
 
 		if ( empty( $atts ) ) {
@@ -26,7 +26,7 @@ Version 1.0 - Original Version
 				'class'      => '',
 				'quantity'   => '1',
 				'sku'        => '',
-				'style'      => 'border:4px solid #ccc; padding: 12px;',
+				'style'      => 'border:4px dotted #ccc; padding: 12px;',
 				'show_price' => 'true',
 			),
 			$atts,
@@ -71,9 +71,9 @@ Version 1.0 - Original Version
 
 		return ob_get_clean();
 	}
-	*/
 
 	function acl_test_remove() {
-		remove_shortcode('add_to_cart');
+		remove_shortcode ( 'add_to_cart' );
+		add_shortcode ( 'add_to_cart', 'acl_add_to_cart' );
 	}
 	add_action('wp_loaded', 'acl_test_remove');
