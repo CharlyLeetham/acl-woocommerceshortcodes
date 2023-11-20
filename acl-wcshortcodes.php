@@ -1,4 +1,16 @@
 <?php
+/*
+Plugin Name: ACL New Woocommerce Shortcodes
+Plugin URI: http://askcharlyleetham.com
+Description: New Shortcodes for WooCommerce
+Version: 1
+Author: Charly Dwyer
+Author URI: http://askcharlyleetham.com
+License: GPL
+
+Changelog
+Version 1.0 - Original Version
+*/
 
 /*
 	function product_add_to_cart( $atts ) {
