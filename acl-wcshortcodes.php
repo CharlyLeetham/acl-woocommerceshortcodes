@@ -55,6 +55,7 @@ Version 1.0 - Original Version
 		if ( wc_string_to_bool( $atts['show_price'] ) ) {
 			// @codingStandardsIgnoreStart
 			echo $product->get_price_html();
+			echo 'here';
 			// @codingStandardsIgnoreEnd
 		}
 
