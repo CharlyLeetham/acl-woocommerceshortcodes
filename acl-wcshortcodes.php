@@ -73,4 +73,7 @@ Version 1.0 - Original Version
 	}
 	*/
 
-	remove_shortcode('product_add_to_cart');
+	function acl_test_remove() {
+		remove_shortcode('add_to_cart');
+	}
+	add_action('wp_loaded', 'acl_test_remove');
